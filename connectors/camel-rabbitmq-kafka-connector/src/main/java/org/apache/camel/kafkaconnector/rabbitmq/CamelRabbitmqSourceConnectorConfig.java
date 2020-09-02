@@ -78,7 +78,7 @@ public class CamelRabbitmqSourceConnectorConfig
     public static final String CAMEL_SOURCE_RABBITMQ_ENDPOINT_QUEUE_DOC = "The queue to receive messages from";
     public static final String CAMEL_SOURCE_RABBITMQ_ENDPOINT_QUEUE_DEFAULT = null;
     public static final String CAMEL_SOURCE_RABBITMQ_ENDPOINT_ROUTING_KEY_CONF = "camel.source.endpoint.routingKey";
-    public static final String CAMEL_SOURCE_RABBITMQ_ENDPOINT_ROUTING_KEY_DOC = "The routing key to use when binding a consumer queue to the exchange. For producer routing keys, you set the header rabbitmq.ROUTING_KEY.";
+    public static final String CAMEL_SOURCE_RABBITMQ_ENDPOINT_ROUTING_KEY_DOC = "The routing key to use when binding a consumer queue to the exchange. For producer routing keys, you set the header CamelRabbitmqRoutingKey.";
     public static final String CAMEL_SOURCE_RABBITMQ_ENDPOINT_ROUTING_KEY_DEFAULT = null;
     public static final String CAMEL_SOURCE_RABBITMQ_ENDPOINT_SKIP_DLQ_DECLARE_CONF = "camel.source.endpoint.skipDlqDeclare";
     public static final String CAMEL_SOURCE_RABBITMQ_ENDPOINT_SKIP_DLQ_DECLARE_DOC = "If true the producer will not declare and bind a dead letter queue. This can be used if you have also DLQ rabbitmq consumer and you want to avoid argument clashing between Producer and Consumer. This option have no effect, if DLQ configured (deadLetterExchange option is not set).";

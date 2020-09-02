@@ -46,7 +46,7 @@ The camel-rabbitmq source connector supports 98 options, which are listed below.
 | *camel.source.endpoint.passive* | Passive queues depend on the queue already to be available at RabbitMQ. | false | MEDIUM
 | *camel.source.endpoint.portNumber* | Port number for the host with the running rabbitmq instance or cluster. Default value is 5672. | null | MEDIUM
 | *camel.source.endpoint.queue* | The queue to receive messages from | null | MEDIUM
-| *camel.source.endpoint.routingKey* | The routing key to use when binding a consumer queue to the exchange. For producer routing keys, you set the header rabbitmq.ROUTING_KEY. | null | MEDIUM
+| *camel.source.endpoint.routingKey* | The routing key to use when binding a consumer queue to the exchange. For producer routing keys, you set the header CamelRabbitmqRoutingKey. | null | MEDIUM
 | *camel.source.endpoint.skipDlqDeclare* | If true the producer will not declare and bind a dead letter queue. This can be used if you have also DLQ rabbitmq consumer and you want to avoid argument clashing between Producer and Consumer. This option have no effect, if DLQ configured (deadLetterExchange option is not set). | false | MEDIUM
 | *camel.source.endpoint.skipExchangeDeclare* | This can be used if we need to declare the queue but not the exchange | false | MEDIUM
 | *camel.source.endpoint.skipQueueBind* | If true the queue will not be bound to the exchange after declaring it | false | MEDIUM
